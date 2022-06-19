@@ -1,0 +1,23 @@
+body {
+    font-size: 1.5em;
+}
+
+h1 {
+    text-align: center;
+}
+
+.cabecalho-moda {
+    color: white;
+    background-color: #BB86FC;
+}
+
+.cabecalho-casa {
+    color: white;
+    background-color: #00C4B4;
+}
+
+td {
+    background-color: #424250;
+    color: white;
+    padding: 5px;
+}
