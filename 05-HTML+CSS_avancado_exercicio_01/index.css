@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;800&display=swap');
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+}
+
+.logo {
+    display: flex;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    align-items: center;
+}
+
+.logo img {
+    width: 45px;
+    height: 42px;
+}
+
+.logo h1 {
+    margin-left: 8px;
+}
+
+.menu {
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    align-content: center;
+}
+
+.menu li a {
+    margin-right: 30px;
+    padding: 11px 7px;
+    transition: 0.3s ease-in-out;
+}
+
+.menu li a:hover {
+    color: white;
+    background-color: #5BC241;
+    text-align: center;
+}
+
+.botao {
+    color: white;
+    background-color: #5BC241;
+    text-align: center;
+    font-weight: 300;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 45px;
+    }
+
+    .logo {
+        display: flex;
+        font-family: 'Public Sans', sans-serif;
+        font-weight: 800;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .logo h1 {
+        font-size: 40px;
+        margin-left: 8px;
+    }
+    
+    .logo img {
+        width: 45px;
+        height: 42px;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Public Sans', sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+        align-items: center;
+    }
+    
+    .menu ul {
+        display: flex;
+    }
+    
+    .menu li {
+        margin: 10px;
+    }
+
+    .menu li a {
+        margin-bottom: 30px;
+        padding: 11px 7px;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .menu li a:hover {
+        color: white;
+        background-color: #5BC241;
+        text-align: center;
+        padding: 11px 7px 11px 6px;
+    }
+    
+    .botao {
+        color: white;
+        background-color: #5BC241;
+        text-align: center;
+        font-weight: 300;
+        padding: 10px 21px 11px 21px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+}
