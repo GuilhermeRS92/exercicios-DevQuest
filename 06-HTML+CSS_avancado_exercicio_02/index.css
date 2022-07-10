@@ -1,0 +1,48 @@
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.galeria .pintura {
+    width: 335px;
+    height: 431px;
+    position: relative;
+}
+
+.galeria .pintura img {
+    width: 100%;
+}
+
+.galeria .legenda {
+    position: absolute;
+    left: 30px;
+    bottom: 40px;
+    color: white;
+ }
+
+.legenda h2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.legenda h3 {
+    font-weight: 300;
+    font-size: 17px;
+}
+
+@media (max-width:1440px) {
+    .galeria {
+        max-width: 900px;
+        margin: 30px 0;
+        gap: 10px;
+        justify-content: center;
+    }
+}
