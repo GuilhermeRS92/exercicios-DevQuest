@@ -1,0 +1,66 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 25%;
+    min-width: 300px;
+    height: 55vh;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.userInfo {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.userInfo img {
+    width: 30%;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.userInfo h1 {
+    font-size: large;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.userInfo h1 strong {
+    color: var(--text-color);
+}
+
+.userInfo p {
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.statisticsInfo {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px var(--text-color);
+    padding: 10px;
+}
+
+.statisticsInfo .statistics {
+    text-align: center;
+}
+
+.statisticsInfo .statistics h2 {
+    font-size: large;
+}
+
+.statisticsInfo .statistics p {
+    color: var(--text-color);
+    font-size: large;
+}
