@@ -1,0 +1,132 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/bg-desktop.svg') center center no-repeat;
+    background-color: var(--violet);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.container .header{
+    margin: 0 80px;
+}
+
+.container .header img{
+    width: 205px;
+}
+
+.container .content{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.container .content .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content .informations {
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.container .content .informations h1{
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.container .content .informations p{
+    font-size: 1rem;
+    margin: 20px 0;
+}
+
+.container .content .informations a{
+    width: 200px;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 80px;
+}
+
+.social i {
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 0 10px;
+}
+
+.social i:hover {
+    color: var(--soft-magenta);
+}
+
+footer{
+    display: none;
+}
+
+.attribution{
+    font-size: 11px; text-align: center;
+}
+    
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 425px){
+    .container{
+        flex-direction: column;
+        background: url('../images/bg-mobile.svg') center center no-repeat;
+        background-color: var(--violet);
+    }
+    
+    .container .header{
+        margin: 0 40px;
+    }
+    
+    .container .header img{
+        width: 140px;
+    }
+    
+    .container .content{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+    }
+
+    .container .content .image img{
+        width: 80%;
+    }
+    
+    .container .content .informations {
+        align-items: center;
+    }
+    
+    .container .content .informations h1{
+        font-size: 1.3rem;
+    }
+    
+    .container .content .informations p{
+        max-width: 320px;
+        font-size: 1rem;
+    }
+    
+    .container .content .informations a{
+        width: 230px;
+    }
+    
+    .social {
+        justify-content: center;
+    }
+    
+    .social i {
+        font-size: 2rem;
+        margin: 0 10px;
+    }
+}
