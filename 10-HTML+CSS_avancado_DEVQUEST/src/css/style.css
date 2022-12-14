@@ -1,9 +1,14 @@
-.container{
+body {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background: url('../images/bg-desktop.svg') center center no-repeat;
     background-color: var(--violet);
     background-size: cover;
+}
+
+.container{
+    max-width: 1440px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -12,6 +17,7 @@
 
 .container .header{
     margin: 0 80px;
+    max-width: 1440px;
 }
 
 .container .header img{
@@ -19,6 +25,7 @@
 }
 
 .container .content{
+    max-width: 1440px;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
 }
@@ -33,7 +40,7 @@
     max-width: 520px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
 }
 
@@ -49,9 +56,11 @@
 
 .container .content .informations a{
     width: 200px;
+    margin-top: 10px;
 }
 
 .social {
+    max-width: 1440px;
     display: flex;
     justify-content: flex-end;
     padding: 0 80px;
@@ -79,11 +88,50 @@ footer{
     color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 425px){
-    .container{
-        flex-direction: column;
+@media (max-width: 768px){
+
+    body{
         background: url('../images/bg-mobile.svg') center center no-repeat;
         background-color: var(--violet);
+        background-size: cover;
+    }
+
+    .container .header{
+        margin: 0 40px;
+    }
+
+    .container .content{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 1fr;
+        text-align: center;
+    }
+
+    .container .content .image img{
+        width: 80%;
+    }
+
+    .container .content .informations {
+        align-items: center;
+        max-width: inherit;
+    }
+
+    .container .content .informations p{
+        max-width: 320px;
+    }
+
+}
+
+@media (max-width: 425px){
+
+    body{
+        background: url('../images/bg-mobile.svg') center center no-repeat;
+        background-color: var(--violet);
+        background-size: cover;
+    }
+    
+    .container{
+        flex-direction: column;
+        justify-content: space-around;
     }
     
     .container .header{
@@ -91,7 +139,7 @@ footer{
     }
     
     .container .header img{
-        width: 140px;
+        width: 100px;
     }
     
     .container .content{
@@ -115,10 +163,11 @@ footer{
     .container .content .informations p{
         max-width: 320px;
         font-size: 1rem;
+        margin: 0;
     }
     
     .container .content .informations a{
-        width: 230px;
+        width: 150px;
     }
     
     .social {
@@ -127,6 +176,5 @@ footer{
     
     .social i {
         font-size: 2rem;
-        margin: 0 10px;
     }
 }
