@@ -1,0 +1,64 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+}
+
+.slider{
+    position: relative;
+    right: 0%;
+    height: 100%;
+}
+
+.imagem1{
+    background: url(images/imagem_red.png) no-repeat center;
+}
+
+.imagem2{
+    background: url(images/imagem_yellow.png) no-repeat center;
+    left: 100%;
+}
+
+.imagem3{
+    background: url(images/imagem_brown.png) no-repeat center;
+    left: 200%;
+}
+
+.imagem4{
+    background: url(images/imagem_blue.png) no-repeat center;
+    left: 300%;
+}
+
+.box{
+    width: 620px;
+    height: 700px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 65px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.linkRed{
+    color: var(--red)
+}
+
+.linkYellow{
+    color: var(--yellow)
+}
+
+.linkBrown{
+    color: var(--brown)
+}
+
+.linkBlue{
+    color: var(--blue)
+}
