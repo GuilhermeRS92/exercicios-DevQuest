@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    background-size: cover;
+    color: #eee;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
