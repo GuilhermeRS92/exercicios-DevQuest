@@ -11,10 +11,46 @@ main{
     padding: 10%;
 }
 
+.box-navegacao{
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.botoes-navegacao{
+    width: 100%;
+    padding: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.setaInativa{
+    cursor: default;
+}
+
 .slider{
     position: relative;
-    right: 0%;
     height: 100%;
+}
+
+.slideAtivo1{
+    right: 0%;
+}
+
+.slideAtivo2{
+    right: 100%;
+}
+
+.slideAtivo3{
+    right: 200%;
+}
+
+.slideAtivo4{
+    right: 300%;
 }
 
 .imagem1{
@@ -47,6 +83,10 @@ main{
     justify-content: space-between;
 }
 
+.btnSaibaMais{
+    cursor: pointer;
+}
+
 .linkRed{
     color: var(--red)
 }
@@ -61,4 +101,24 @@ main{
 
 .linkBlue{
     color: var(--blue)
+}
+
+@media(max-width: 1440px){
+
+    h2 {
+        font-size: 40px;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+    
+    a {
+        font-size: 20px;
+    }
+
+    .box{
+        width: 500px;
+        height: 565px;
+    }
 }
