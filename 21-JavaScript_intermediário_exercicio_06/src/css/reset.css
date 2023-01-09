@@ -12,7 +12,7 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-h2{
+h1{
     font-weight: 700;
     font-size: 25px;
     line-height: 29px;
@@ -29,6 +29,14 @@ summary{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+summary:hover{
+    color: #f47c57;
+}
+
+display p{
+    cursor: none;
 }
 
 content{

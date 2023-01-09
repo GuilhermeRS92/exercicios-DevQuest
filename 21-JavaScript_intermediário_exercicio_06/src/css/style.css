@@ -4,7 +4,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gainsboro;
+    background-color: #e5e5e5;
 }
 
 .container{
@@ -35,6 +35,10 @@ main{
 
 .perguntaInativa{
     content: url(../images/seta-fechada.png);
+}
+
+.pergunta{
+    transition: 0.2s ease;
 }
 
 hr{
